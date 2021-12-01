@@ -1,0 +1,9 @@
+*{
+    color: #FFF;
+}
+
+body{
+    background-image: url(../image/memory.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

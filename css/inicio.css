@@ -1,0 +1,74 @@
+*{
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+body{
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.global{
+    display: grid;
+    place-items: center;
+}
+.container{
+    border-radius: 15px;
+    background:rgba(130, 255, 251, 0.63);
+    margin-top: 30px;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: 550px;
+}
+input[type="email"]{
+    margin:10px 0 50px 0;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    width: 50%;
+    height: 40px;
+}
+input[type="password"]{
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    width: 50%;
+    height: 40px;
+    margin:10px 0 50px 0;
+}
+input[type="submit"]{
+    margin:10px 250px 30px 230px;
+    outline:none;
+    border:none;
+    cursor: pointer;
+    width: 30%;
+    height: 40px;
+    border-radius: 15px;
+    background: #978cb6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bdb36e, #947cdd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c2bd96, #574491); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: 1s;
+}
+input[type="submit"]:hover{
+    font-size: 20px;
+    background: gray;
+}
+a{
+    font-size: 18px;
+    display: block;
+    margin-bottom: 15px;
+    color: #000000;
+    transition: 0.5s;
+}
+a:hover{
+    color: #3d3d3d;
+}
+::placeholder{
+    color: black;
+}

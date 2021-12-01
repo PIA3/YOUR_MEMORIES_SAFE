@@ -1,0 +1,118 @@
+*{
+    text-align: center;
+    text-decoration: none;
+}
+body{
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+.global{
+    display: grid;
+    place-items: center;
+}
+.container{
+    border-radius: 15px;
+    background:rgba(130, 255, 251, 0.63);
+    margin-top: 30px;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: 570px;
+}
+
+input{
+    margin:10px 0 10px 0;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    width: 380px;
+    height: 40px;
+}
+
+select{
+    margin:10px 0 10px 0;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    width: 380px;
+    height: 40px;
+}
+
+input[type="submit"]{
+
+    outline:none;
+    border:none;
+    cursor: pointer;
+    width: 50%;
+    height: 40px;
+    border-radius: 15px;
+    background: #978cb6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bdb36e, #947cdd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c2bd96, #574491); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: 1s;
+}
+input[type="submit"]:hover{
+    font-size: 30px;
+    background: gray;
+}
+a{
+    font-size: 22px;
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+    transition: 0.5s;
+}
+a:hover{
+    color: #3d3d3d;
+}
+::placeholder{
+    color: black;
+}
+
+
+
+.btn {
+  width: 200px;
+  height: 60px;
+  background: #ff6f3c;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn::before{
+  content: 'Hover Aqui';
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  transition: all .5s ease-in-out;
+}
+
+.btn:hover::before{
+  top: -30px;
+}
+
+.btn::after {
+  font-family: 'FontAwesome';
+  content: "\f004";
+  font-size: 40px;
+  color: red;
+  position: absolute;
+  top: 150%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  transition: all .5s ease-in-out;
+}
+
+.btn:hover::after {
+  top: 50%;
+}
